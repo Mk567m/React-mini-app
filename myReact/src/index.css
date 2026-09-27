@@ -1,0 +1,150 @@
+body{
+    background: linear-gradient(to right, rgb(132, 46, 253), rgb(48, 197, 242) );
+    
+}
+.master-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+.note-card{
+    background: linear-gradient(to right, rgba(132, 46, 253, 0.563), rgba(48, 197, 242, 0.662) );
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    min-height: 40vh;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 20px;
+    width: 50vw;
+}
+.notes-content{
+    padding-top: 20px;
+    
+    padding-right: 8px;
+    text-align: center;
+    font-size: 1.3rem;
+    border: 5px ridge rgba(154, 154, 251, 0.664);
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px  rgba(255, 255, 255, 0.484);
+}
+
+#addlabel{
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    
+}
+#addinput{
+    padding: 10px;
+    font-size: large;
+    width: 280px;
+    border-radius: 10px;
+}
+#add-note-btn{
+    padding: 15px;
+    width: 130px;
+    font-size: 0.9rem;
+    border-radius: 10px;
+    margin-left: 20px;
+    font-weight: 600;
+    border: none;
+    color: rgb(8, 2, 2);
+    
+    background-color: rgb(52, 221, 52);
+    cursor: pointer;
+    transition: 0.7 ease;
+}
+#add-note-btn:hover{
+    background-color: green;
+    color: white;
+}
+#error-msg{
+    text-align: center;
+    margin-top: 8px;
+    color: rgb(118, 2, 2);
+}
+
+.delete-btn{
+    padding: 10px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+    height: 45px;
+    width: 100px;
+    background-color: rgb(187, 29, 29);
+    color: white;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.delete-btn:hover{
+    background-color: rgb(122, 1, 1);
+}
+.edit-btn{
+    padding: 10px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+    height: 45px;
+    width: 100px;
+    background-color: rgb(16, 37, 171);
+    color: white;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.edit-btn:hover{
+    background-color: rgb(8, 0, 69);
+}
+.list-item{
+    font-size: large;
+    padding-bottom:10px;
+    color: white;
+    margin-right: 15px;
+    padding-right: 10px;
+}
+.editinput{
+    padding: 10px;
+    
+    font-size: large;
+    width: 280px;
+    border-radius: 10px;
+}
+.save-btn{
+    padding: 15px;
+    margin-bottom: 10px;
+    width: 130px;
+    font-size: 0.9rem;
+    border-radius: 10px;
+    margin-left: 20px;
+    font-weight: 600;
+    border: none;
+    color: rgb(8, 2, 2);
+    
+    background-color: rgb(52, 221, 52);
+    cursor: pointer;
+    transition: 0.7 ease;
+}
+.save-btn:hover{
+    background-color: green;
+    color: white;
+}
+li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+.list-item span{
+    width: 220px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
